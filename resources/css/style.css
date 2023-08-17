@@ -1,0 +1,103 @@
+body {
+  background-color: rgb(236 236 236);
+  font-family: initial;
+}
+
+header {
+  margin-bottom: 85px;
+}
+
+.logo {
+  padding: 60px 75px;
+  font-size: 60px;
+  font-weight: bold;
+}
+
+/* .nav-wrapper {
+  margin-right: 75px;
+} */
+
+.contents {
+  width: 100%;
+  padding-bottom: 100px;
+}
+
+.contents>p {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.prof-text {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 35px;
+  margin-top: 3rem;
+}
+
+@media screen and (min-width:480px) {
+  .prof-text {
+    margin-top: 12rem;
+    line-height: 35px;
+  }
+}
+
+.prof-text-head {
+  display: inline-block;
+  width: 100px;
+  font-weight: 600;
+}
+
+.prof-text-colon {
+  display: inline-block;
+  width: 35px;
+}
+
+.top-img {
+  width: 350px;
+}
+
+footer {
+  height: 100px;
+}
+
+.footer-nav {
+  margin-right: 1rem!important;
+  display: inline!important;
+}
+
+#container {
+  margin: 10px;
+}
+
+.graf {
+  display: flex;
+  align-items: center;
+  margin: 5px;
+}
+
+.category-title {
+  font-size: 20px;
+}
+
+.data-title-wrapper {
+  width: 155px;
+}
+
+.data-name {
+  padding: 0 6px;
+  color: #404040;
+}
+
+.graf-bar-bg {
+  width: 100%;
+  background: #e0e0e0;
+}
+
+.graf-bar {
+  background: #898989;
+}
+
+.graf-bar span {
+  color: #FFF;
+  padding: 0 6px;
+}
