@@ -1,21 +1,9 @@
+/* 共通 */
+
 body {
   background-color: rgb(236 236 236);
   font-family: initial;
 }
-
-header {
-  margin-bottom: 85px;
-}
-
-.logo {
-  padding: 60px 75px;
-  font-size: 60px;
-  font-weight: bold;
-}
-
-/* .nav-wrapper {
-  margin-right: 75px;
-} */
 
 .contents {
   width: 100%;
@@ -26,6 +14,16 @@ header {
   font-size: 25px;
   font-weight: bold;
 }
+
+/* ヘッダー */
+
+.logo {
+  padding: 60px 75px;
+  font-size: 60px;
+  font-weight: bold;
+}
+
+/* ABOUT */
 
 .prof-text {
   font-size: 18px;
@@ -56,14 +54,53 @@ header {
   width: 350px;
 }
 
+/* SKILLS */
+
+.skill-images {
+  width: 17vw;
+}
+
+@media screen and (min-width:480px) {
+  .skill-images {
+    width: 9vw;
+  }
+}
+
+/* CONTACT */
+
+.modal-text-head {
+  display: inline-block;
+  width: auto;
+  font-weight: 600;
+}
+
+.modal-text-colon {
+  display: inline-block;
+  width: 35px;
+}
+
+.modal-body {
+  line-height: 40px;
+}
+
+/* トップスクロールボタン */
+
+.top-btn {
+  width: 30px;
+}
+
+/* FOOTER */
+
 footer {
-  height: 100px;
+  height: 75px;
 }
 
 .footer-nav {
   margin-right: 1rem!important;
   display: inline!important;
 }
+
+/* 横棒グラフ */
 
 #container {
   margin: 10px;
@@ -100,4 +137,25 @@ footer {
 .graf-bar span {
   color: #FFF;
   padding: 0 6px;
+}
+
+/* フェードイン */
+
+.fadeIn {
+  opacity: 0;
+  transition: 2s;
+}
+
+.fadeIn.is-show {
+  opacity: 1;
+}
+
+#loadContainer {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 56px;
+  height: 59px;
+  margin-left: -28px;
+  margin-top: -29px;
 }

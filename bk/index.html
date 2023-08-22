@@ -177,7 +177,7 @@
                     <div class="container">
                         <div class="row justify-content-center">
                             <div class="col-sm-10 col-12">
-                                <form>
+                                <form class="contact-form">
                                     <div class="mb-3">
                                         <label for="inputName" class="form-label">名前</label>
                                         <input type="text" class="form-control" id="inputName" placeholder="例：山本　太郎" required>
@@ -190,13 +190,11 @@
                                         <label for="inputText" class="form-label">お問い合わせ内容</label>
                                         <textarea class="form-control" id="inputText" rows="3" placeholder="例：好きな食べ物はなんですか？" required></textarea>
                                     </div>
-                                    <!-- <button type="submit" class="btn btn-primary">確認</button> -->
-                                </form>
-                                <!-- Button trigger modal -->
-                                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                                    確認
-                                </button>
-                                
+                                    <!-- Button trigger modal -->
+                                    <button type="submit" class="btn btn-primary modal-boot d-block d-sm-inline-block mx-auto" data-bs-toggle="modal" data-bs-target="#exampleModal" disabled>
+                                        確認
+                                    </button>
+                                </form>                                
                                 <!-- Modal -->
                                 <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                                     <div class="modal-dialog">
@@ -206,23 +204,35 @@
                                                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                             </div>
                                             <div class="modal-body">
-                                                <div class="inputName">
-
+                                                <div class="input-name-mod">
+                                                    <p>
+                                                        <span class="modal-text-head">氏名</span>
+                                                        <span class="modal-text-colon">：</span>
+                                                    </p>
+                                                    <p class="input-name-value ms-3"></p>
                                                 </div>
-                                                <div class="inputEmail">
-                                                
+                                                <div class="input-email-mod">
+                                                    <p>
+                                                        <span class="modal-text-head">メールアドレス</span>
+                                                        <span class="modal-text-colon">：</span>
+                                                    </p>
+                                                    <p class="input-email-value ms-3"></p>
                                                 </div>
-                                                <div class="inputText">
-                                                
+                                                <div class="input-text-mod">
+                                                    <p>
+                                                        <span class="modal-text-head">お問い合わせ内容</span>
+                                                        <span class="modal-text-colon">：</span>
+                                                    </p>
+                                                    <p class="input-text-value ms-3"></p>
                                                 </div>
-                                                <div class="mb-3 form-check">
-                                                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                                                    <label class="form-check-label" for="exampleCheck1">確認しました</label>
-                                                </div>
+                                            </div>
+                                            <div class="mb-3 form-check mx-auto">
+                                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                                <label class="form-check-label" for="exampleCheck1">確認しました</label>
                                             </div>
                                             <div class="modal-footer">
                                                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">キャンセル</button>
-                                                <button type="button" class="btn btn-primary">送信</button>
+                                                <button type="button" class="btn btn-primary act-submit" disabled>送信</button>
                                             </div>
                                         </div>
                                     </div>
