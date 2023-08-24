@@ -9,7 +9,6 @@ $(function () {
         return false;
     });
 
-
     // 問い合わせ内容入力チェック
     $(".form-control").on("input", function () {
         var inputName = $('#inputName').val();
@@ -142,9 +141,7 @@ $(function () {
         }
     }
 
-
-
-
+    // ローディング画面
     var pathStart = "M 28 2 L 17 16 L 23 16 L 9 34 L 17 34 L 3 52 L 19 52 L 19 57 ";
     var ptsDynamic = [
         [[19, 37], 57],
@@ -200,5 +197,5 @@ $(function () {
     setTimeout(function () {
         $('#loadContainer').fadeOut();
         $('.wrapper').fadeIn();
-    }, 3000);
+    }, 2000);
 });

@@ -66,6 +66,75 @@ body {
   }
 }
 
+/* PORTFOLIO */
+
+.portfolio-img {
+  border: 1px solid #707070;
+  cursor: pointer;
+  overflow: hidden;
+  position: relative;
+  height: auto;
+}
+
+.portfolio-img .portfolio-main-img {
+  height: auto;
+  transition: transform .6s ease;
+  /* ゆっくり変化させる */
+}
+
+.portfolio-img:hover .portfolio-main-img {
+  transform: scale(1.1);
+  /* 拡大 */
+}
+
+.portfolio-img p {
+  align-items: center;
+  /* テキストの中央揃え */
+  bottom: 0;
+  color: #fff;
+  /* テキストの色 */
+  display: flex;
+  /* テキストの中央揃え */
+  justify-content: center;
+  /* テキストの中央揃え */
+  left: 0;
+  margin: auto;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 80%;
+  /* テキストを横幅いっぱいにならないようにする */
+  z-index: 2;
+}
+
+/* マスク */
+
+.portfolio-img::before {
+  background: rgba(0, 0, 0, .5);
+  /* マスクの色(黒の50%) */
+  bottom: 0;
+  content: '';
+  height: auto;
+  left: 0;
+  opacity: 0;
+  /* 最初は透明（非表示） */
+  position: absolute;
+  right: 0;
+  top: 0;
+  transition: opacity .6s ease;
+  /* ゆっくりopacityのみへ変化させる */
+  width: 100%;
+  z-index: 1;
+}
+
+.portfolio-img:hover::before {
+  opacity: 1;
+}
+
+.portfolio-blank-img {
+  width: 20px;
+}
+
 /* CONTACT */
 
 .modal-text-head {

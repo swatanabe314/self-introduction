@@ -59,9 +59,9 @@
                                     <a href="#skills" class="nav-text charge-btn text-black text-decoration-none d-block py-3 pl-4 px-md-0">SKILLS</a>
                                 </span>
                             </li>
-                            <li class="nav-item active h5 text-sm-center text-end me-3 mx-sm-0 mx-0 my-auto p-0 d-none">
+                            <li class="nav-item active h5 text-sm-center text-end me-3 mx-sm-0 mx-0 my-auto p-0">
                                 <span class="nav-link">
-                                    <a href="#hobbies" class="nav-text reserve-btn text-black text-decoration-none d-block py-3 pl-4 px-md-0">HOBBIES</a>
+                                    <a href="#portfolio" class="nav-text reserve-btn text-black text-decoration-none d-block py-3 pl-4 px-md-0">PORTFOLIO</a>
                                 </span>
                             </li>
                             <li class="nav-item active h5 text-sm-center text-end me-3 mx-sm-0 ms-0 my-auto p-0">
@@ -200,13 +200,34 @@
                     </div>
                 </div>
             </div>
-            <div class="hobbies contents pt-4 d-none" id="hobbies">
-                <p class="ms-sm-5 mb-5 text-center text-sm-start inview fadeIn">HOBBIES</p>
+            <div class="portfolio contents pt-4" id="portfolio">
+                <p class="ms-sm-5 mb-5 text-center text-sm-start inview fadeIn">PORTFOLIO</p>
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-sm-6 col-10">
+                            <a href="../../Kyan-G/public/" target="_blank">
+                                <div class="portfolio-img">
+                                    <img class="img-fluid portfolio-main-img" src="./resources/img/pensyon.png" alt="">
+                                    <!-- <img class="position-relative portfolio-blank-img" src="./resources/img/external_link.png" alt=""> -->
+                                </div>
+                            </a>
+                            <!-- <p>宿泊予約サイト</p> -->
+                        </div>
+                        <div class="col-sm-6 col-10 mt-5 mt-sm-0">
+                            <a href="../../tyaya-tanimoto/public/" target="_blank">
+                                <div class="portfolio-img">
+                                    <img class="img-fluid portfolio-main-img" src="./resources/img/cover_noon_pc.jpg" alt="">
+                                </div>
+                            </a>
+                            <!-- <p>飲食店ホームページ</p> -->
+                        </div>
+                    </div>
+                </div>
             </div>
             <div class="contact contents pt-4" id="contact">
                 <p class="ms-sm-5 mb-5 text-center text-sm-start inview fadeIn">CONTACT</p>
                 <div class="container">
-                    <div class="row justify-content-center inview fadeIn">
+                    <div class="row justify-content-center">
                         <div class="col-sm-10 col-12">
                             <form class="contact-form" action="./mail.php" method="post">
                                 <div class="mb-3">
@@ -223,18 +244,18 @@
                                 </div>
                                 <div class="text-end me-sm-4">
                                     <!-- Button trigger modal -->
-                                    <button type="submit" class="btn btn-primary modal-boot d-block d-sm-inline-block mx-auto" data-bs-toggle="modal" data-bs-target="#exampleModal" disabled>
+                                    <button type="submit" class="btn btn-primary modal-boot d-block d-sm-inline-block mx-auto" data-toggle="modal" data-target="#contactModal" disabled>
                                         確認
                                     </button>
                                 </div>
                             </form>
                             <!-- Modal -->
-                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
                                 <div class="modal-dialog">
                                     <div class="modal-content">
                                         <div class="modal-header">
-                                            <h5 class="modal-title" id="exampleModalLabel">送信内容の確認</h5>
-                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                            <h5 class="modal-title" id="contactModalLabel">送信内容の確認</h5>
+                                            <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>
                                         </div>
                                         <div class="modal-body">
                                             <div class="input-name-mod">
@@ -264,7 +285,7 @@
                                             <label class="form-check-label" for="exampleCheck1">確認しました</label>
                                         </div>
                                         <div class="modal-footer">
-                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">キャンセル</button>
+                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">キャンセル</button>
                                             <button type="button" class="btn btn-primary act-submit" disabled>送信</button>
                                         </div>
                                     </div>
@@ -282,7 +303,7 @@
             <div class="text-start mx-5 mt-4">
                 <p class="footer-nav"><a href="#about">ABOUT</a></p>
                 <p class="footer-nav"><a href="#skills">SKILLS</a></p>
-                <p class="footer-nav"><a href="#hobbies">HOBBIES</a></p>
+                <p class="footer-nav"><a href="#portfolio">PORTFOLIO</a></p>
                 <p class="footer-nav"><a href="#contact">CONTACT</a></p>
             </div>
         </footer>

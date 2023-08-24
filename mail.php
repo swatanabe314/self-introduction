@@ -14,6 +14,6 @@
     } else {
         $_SESSION["result"] = "fail";
     }
-    header("Location:/index.php");
+    header("Location:/portfolio/self-introduction/index.php");
     exit();
 ?>
