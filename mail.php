@@ -4,8 +4,8 @@
     mb_internal_encoding("UTF-8");
 
     $to = $_POST['email'];
-    $subject = "テスト送信";
-    $message = $_POST['message'];
+    $subject = "お問い合わせ内容";
+    $message = "お問い合わせありがとうございます。\nこちらお問い合わせ内容です。\n".$_POST['message'];
     $headers = "From: shuji.watanabe.pl@gmail.com";
     $name = $_POST['name'];
     

@@ -228,3 +228,26 @@ footer {
   margin-left: -28px;
   margin-top: -29px;
 }
+
+/* 横棒アニメーション */
+
+.headline {
+  position: relative;
+}
+
+.headline:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -14px;
+  width: 0%;
+  height: 2px;
+  background: #90b8a6;
+  transition-delay: 0.7s;
+  /* transition: all 0.5s; */
+  transition-duration: 0.5s;
+}
+
+.headline.isActive:after {
+  width: 100%;
+}

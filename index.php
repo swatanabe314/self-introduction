@@ -76,7 +76,7 @@
         </header>
         <main>
             <div class="about contents pt-4" id="about">
-                <p class="ms-sm-5 mb-5 text-center text-sm-start inview fadeIn">ABOUT</p>
+                <p class="ms-sm-5 mb-5 text-center text-sm-start inview fadeIn headline">ABOUT</p>
                 <div class="container text-center h-100">
                     <div class="row h-75 justify-content-center">
                         <div class="col-sm-6 col-10 inview fadeIn">
@@ -89,6 +89,8 @@
                                 <span class="prof-text-head">氏名</span><span class="prof-text-colon">：</span>渡辺　秀二<br>
                                 <span class="prof-text-head">年齢</span><span class="prof-text-colon">：</span>25歳<br>
                                 <span class="prof-text-head">趣味</span><span class="prof-text-colon">：</span>ゲーム(スプラ等)<br>
+                                <span class="prof-text-head">好物</span><span class="prof-text-colon">：</span>クレープ<br>
+                                <span class="prof-text-head">スポーツ</span><span class="prof-text-colon">：</span>テニス・バレー<br>
                                 <span class="prof-text-head">問い合わせ</span><span class="prof-text-colon">：</span>shuji.watanabe.pl@gmail.com<br>
                             </p>
                         </div>
@@ -96,7 +98,7 @@
                 </div>
             </div>
             <div class="skills contents pt-4" id="skills">
-                <p class="ms-sm-5 mb-5 text-center text-sm-start inview fadeIn">SKILLS</p>
+                <p class="ms-sm-5 mb-5 text-center text-sm-start inview fadeIn headline">SKILLS</p>
                 <div class="container">
                     <div class="row">
                         <div class="col-sm-6 col-12 row">
@@ -201,7 +203,7 @@
                 </div>
             </div>
             <div class="portfolio contents pt-4" id="portfolio">
-                <p class="ms-sm-5 mb-5 text-center text-sm-start inview fadeIn">PORTFOLIO</p>
+                <p class="ms-sm-5 mb-5 text-center text-sm-start inview fadeIn headline">PORTFOLIO</p>
                 <div class="container">
                     <div class="row justify-content-center">
                         <div class="col-sm-6 col-10">
@@ -225,7 +227,7 @@
                 </div>
             </div>
             <div class="contact contents pt-4" id="contact">
-                <p class="ms-sm-5 mb-5 text-center text-sm-start inview fadeIn">CONTACT</p>
+                <p class="ms-sm-5 mb-5 text-center text-sm-start inview fadeIn headline">CONTACT</p>
                 <div class="container">
                     <div class="row justify-content-center">
                         <div class="col-sm-10 col-12">

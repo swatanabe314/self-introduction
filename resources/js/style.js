@@ -67,8 +67,14 @@ $(function () {
         $(".inview").on("inview", function (event, isInView) {
             if (isInView) {
                 $(this).stop().addClass("is-show");
+                if ($(this).hasClass("headline")){
+                    $(this).addClass('isActive');
+                }
             } else {
                 $(this).stop().removeClass("is-show");
+                if ($(this).hasClass("headline")) {
+                    $(this).removeClass('isActive');
+                }
             }
         });
     });
